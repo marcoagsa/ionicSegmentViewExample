@@ -1,11 +1,15 @@
 ion-grid {
-  padding: 0 20px 0 20px;
-  display: grid;
-  row-gap: 20px;
+  padding: 20px 20px 100px 20px;
+}
+
+ion-segment {
+  margin-top: 20px;
 }
 
 ion-segment-view {
   height: 150px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 ion-segment-content {
   display: flex;

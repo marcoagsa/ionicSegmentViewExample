@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="true">
 
   <ion-grid>
-    <ion-label> Normal </ion-label>
+    <ion-label color="success"> ✅ Normal </ion-label>
     <ion-segment>
       <ion-segment-button value="first" content-id="first">
         <ion-label>First</ion-label>
@@ -21,13 +21,15 @@
         <ion-label>Third</ion-label>
       </ion-segment-button>
     </ion-segment>
+
     <ion-segment-view>
       <ion-segment-content id="first">First</ion-segment-content>
       <ion-segment-content id="second">Second</ion-segment-content>
       <ion-segment-content id="third">Third</ion-segment-content>
     </ion-segment-view>
 
-    <ion-label> Dynamic Test A </ion-label>
+
+    <ion-label color="danger"> ❌ Dynamic Test A </ion-label>
 
     <ion-segment>
       @for (segment of segments(); track $index) {
@@ -43,7 +45,7 @@
       }
     </ion-segment-view>
 
-    <ion-label> Dynamic Test B (try to use setContent() method) </ion-label>
+    <ion-label color="danger"> ❌ Dynamic Test B (try to use setContent() method) </ion-label>
 
     <ion-segment scrollable mode="md" [(ngModel)]="currentSegment" (ionChange)="segmentChanged()">
       @for (segment of segments(); track $index) {
