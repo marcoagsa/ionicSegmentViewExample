@@ -1,0 +1,16 @@
+# Ignorar dependências do Node.js
+node_modules/
+
+# Ignorar ambientes virtuais Python
+venv/
+.venv/
+
+# Ignorar arquivos de build
+dist/
+build/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar caches de IDEs
+.vscode/
