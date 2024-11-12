@@ -1,5 +1,7 @@
 {
   "name": "segmentView",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular-standalone"
 }
