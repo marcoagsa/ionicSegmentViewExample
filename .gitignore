@@ -54,12 +54,9 @@ yarn-error.log
 
 
 # Miscellaneous
-/.yarn
 /.angular
 /.angular/cache
 .sass-cache/
-/.nx
-/.nx/cache
 /connect.lock
 /coverage
 /libpeerconnection.log
@@ -70,5 +67,43 @@ testem.log
 .DS_Store
 Thumbs.db
 
-#devices
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Prevent the firebase notes from beeing pushed
+firebase-notes.output
+
+# Bun related stuff
+bun.lockb
+
+# fastlane specific
+**/fastlane/report.xml
+
+# deliver temporary files
+**/fastlane/Preview.html
+
+# snapshot generated screenshots
+**/fastlane/screenshots
+
+# scan temporary files
+**/fastlane/test_output
+
+# iOS
 /ios
+*.ipa
+*.dSYM.zip
+
+# Android
+play-store-key.json
+upload-keystore.jks
+keystore.properties
+
+# Env file
+.env*
+!.env.example
